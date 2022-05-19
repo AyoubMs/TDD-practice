@@ -52,7 +52,7 @@ describe Solver do
   context 'Given a number is divisible by 3, the fizzbuzz method' do
     it 'should return the string "fizz"' do
       number1 = 3
-      number2 = 150
+      number2 = 27
 
       result1 = @solver.fizzbuzz(number1)
       result2 = @solver.fizzbuzz(number2)
