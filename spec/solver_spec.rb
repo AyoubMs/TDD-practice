@@ -37,7 +37,7 @@ describe Solver do
     it 'should return the reversed string' do
       string = 'hello'
       expected_reversed_string = 'olleh'
-      expect { @solver.reverse(string) }.to eql(expected_reversed_string)
+      expect(@solver.reverse(string)).to eql(expected_reversed_string)
     end
   end
 
@@ -45,7 +45,20 @@ describe Solver do
     it 'should return the empty string' do
       string = ''
 
-      expect { @solver.reverse(string) }.to eql(string)
+      expect(@solver.reverse(string)).to eql(string)
+    end
+  end
+
+  context 'Given a number is divisible by 3, the fizzbuzz method' do
+    it 'should return the string "fizz"' do
+      number1 = 3
+      number2 = 150
+
+      result1 = @solver.fizzbuzz(number1)
+      result2 = @solver.fizzbuzz(number2)
+
+      expect(result1).to eql('fizz')
+      expect(result2).to eql('fizz')
     end
   end
 end
