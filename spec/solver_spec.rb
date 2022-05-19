@@ -32,4 +32,20 @@ describe Solver do
       expect { @solver.factorial(number) }.to raise_error(RangeError, 'Number should not be negative')
     end
   end
+
+  context 'Given a non empty string the reverse method' do
+    it 'should return the reversed string' do
+      string = 'hello'
+      expected_reversed_string = 'olleh'
+      expect { @solver.reverse(string) }.to eql(expected_reversed_string)
+    end
+  end
+
+  context 'Given an empty string the reverse method' do
+    it 'should return the empty string' do
+      string = ''
+
+      expect { @solver.reverse(string) }.to eql(string)
+    end
+  end
 end
