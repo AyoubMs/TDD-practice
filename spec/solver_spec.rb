@@ -74,4 +74,17 @@ describe Solver do
       expect(result2).to eql('buzz')
     end
   end
+
+  context 'Given a number is divisible by 5 & 3, the fizzbuzz method' do
+    it 'should return the string "fizzbuzz"' do
+      number1 = 150
+      number2 = 15
+
+      result1 = @solver.fizzbuzz(number1)
+      result2 = @solver.fizzbuzz(number2)
+
+      expect(result1).to eql('fizzbuzz')
+      expect(result2).to eql('fizzbuzz')
+    end
+  end
 end
