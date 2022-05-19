@@ -89,7 +89,7 @@ describe Solver do
   end
 
   context 'Given a number is not divisible by 5 or 3, the fizzbuzz method' do
-    it 'should return the string "#{number}"' do
+    it 'should return the string "number"' do
       number1 = 2
       number2 = 19
 
